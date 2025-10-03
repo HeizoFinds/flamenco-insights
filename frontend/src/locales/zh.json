@@ -1,0 +1,151 @@
+{
+  "dashboard": {
+    "title": "Flamenco Insights - 仪表盘",
+    "workerSummary": {
+      "title": "Worker 概览",
+      "online": "在线",
+      "offline": "离线"
+    },
+    "jobQueue": {
+      "title": "任务队列",
+      "empty": "没有正在进行的任务"
+    },
+    "workerList": {
+      "title": "Worker 列表",
+      "viewMode": {
+        "page": "翻页",
+        "scroll": "滚动"
+      },
+      "batchActions": "批量操作",
+      "actions": {
+        "wakeUp": "唤醒 (Wake Up)",
+        "sleepAfterTask": "任务后休眠",
+        "sleepImmediately": "立即休眠",
+        "shutdownAfterTask": "任务后关机",
+        "shutdownImmediately": "立即关机",
+        "remove": "移除 Worker"
+      },
+      "columns": {
+        "status": "状态",
+        "name": "名称",
+        "notes": "备注",
+        "version": "版本",
+        "plan": "计划"
+      },
+      "tooltips": {
+        "sleepAfterTask": "任务完成后将休眠",
+        "shutdownAfterTask": "任务完成后将关机"
+      }
+    },
+    "jobList": {
+      "title": "任务列表",
+      "empty": "未能加载任务或没有任务",
+      "columns": {
+        "name": "任务名称",
+        "status": "状态",
+        "priority": "优先级",
+        "type": "类型",
+        "submitted": "提交时间",
+        "actions": "操作"
+      },
+      "actions": {
+        "details": "详情",
+        "pause": "暂停",
+        "resume": "恢复",
+        "requeue": "重新排队",
+        "cancel": "取消",
+        "delete": "删除"
+      }
+    },
+    "workerDetails": {
+      "title": "Worker 详细信息",
+      "id": "ID",
+      "name": "名称",
+      "status": "状态",
+      "lastSeen": "上次在线",
+      "version": "版本",
+      "ipAddress": "IP 地址",
+      "platform": "平台",
+      "lastTask": "最后任务",
+      "taskTypes": "任务类型",
+      "notes": "备注",
+      "noNotes": "无",
+      "close": "关闭"
+    },
+    "noteDialog": {
+      "title": "编辑 {name} 的备注",
+      "placeholder": "请输入备注内容",
+      "cancel": "取消",
+      "save": "保存"
+    },
+    "messages": {
+      "loadJobsFail": "无法从后端加载任务列表，请检查后端服务是否正常运行。",
+      "loadWorkersFail": "无法加载 Worker 列表。",
+      "loadQueueFail": "无法加载任务队列。",
+      "noteSavedSuccess": "备注已保存",
+      "noteSavedFail": "备注保存失败",
+      "deleteJobConfirm": "确定要删除任务 \"{name}\" 吗？此操作不可逆。",
+      "warning": "警告",
+      "confirmDelete": "确定删除",
+      "cancel": "取消",
+      "jobDeleted": "任务 \"{name}\" 已被删除。",
+      "opSuccess": "操作成功: {command}",
+      "opFail": "操作 \"{command}\" 失败: {error}",
+      "removeWorkerConfirm": "确定要移除选中的 {count} 个 Worker 吗？",
+      "batchCommandSent": "已向 {count} 个 Worker 发送 '{command}' 命令。",
+      "batchCommandFail": "批量操作失败: {error}",
+      "loadWorkerDetailsFail": "加载 Worker 详情失败。"
+    }
+  },
+  "jobDetail": {
+    "title": "任务详情",
+    "submittedAt": "提交于",
+    "lastUpdatedAt": "最后更新",
+    "summary": {
+      "totalSteps": "总步数",
+      "completed": "已完成",
+      "rendering": "渲染中",
+      "failed": "失败"
+    },
+    "workerContribution": {
+      "title": "Worker 贡献度分析",
+      "tooltip": "渲染帧数",
+      "noData": "没有已完成的任务可供分析"
+    },
+    "contributionDetails": {
+      "title": "详细数据",
+      "workerName": "Worker 名称",
+      "framesRendered": "渲染帧数",
+      "notes": "备注",
+      "percentage": "占比"
+    },
+    "frameTimeAnalysis": {
+      "title": "单帧耗时分析 (秒)",
+      "tooltip": {
+        "loading": "加载中...",
+        "frame": "帧号",
+        "time": "渲染耗-时",
+        "worker": "Worker"
+      },
+      "xAxis": "帧号",
+      "yAxis": "渲染耗时 (秒)",
+      "noData": "没有足够的耗时数据可供分析"
+    },
+    "parameters": {
+      "title": "任务详细参数",
+      "frameRange": "帧范围",
+      "format": "输出格式",
+      "scene": "场景",
+      "fps": "帧率 (FPS)",
+      "blendFile": "Blend 文件",
+      "outputPath": "输出路径",
+      "taskType": "任务类型",
+      "taskId": "任务 ID",
+      "noData": "暂无详细参数"
+    },
+    "messages": {
+      "loadError": "加载任务详情数据失败",
+      "workerNotFound": "未找到对应的 Worker 实体，无法编辑备注。"
+    }
+  }
+}

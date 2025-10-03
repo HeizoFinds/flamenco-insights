@@ -1,0 +1,151 @@
+{
+  "dashboard": {
+    "title": "Flamenco Insights - Dashboard",
+    "workerSummary": {
+      "title": "Worker Overview",
+      "online": "Online",
+      "offline": "Offline"
+    },
+    "jobQueue": {
+      "title": "Job Queue",
+      "empty": "No active jobs"
+    },
+    "workerList": {
+      "title": "Worker List",
+      "viewMode": {
+        "page": "Page",
+        "scroll": "Scroll"
+      },
+      "batchActions": "Batch Actions",
+      "actions": {
+        "wakeUp": "Wake Up",
+        "sleepAfterTask": "Sleep After Task",
+        "sleepImmediately": "Sleep Immediately",
+        "shutdownAfterTask": "Shutdown After Task",
+        "shutdownImmediately": "Shutdown Immediately",
+        "remove": "Remove Worker"
+      },
+      "columns": {
+        "status": "Status",
+        "name": "Name",
+        "notes": "Notes",
+        "version": "Version",
+        "plan": "Plan"
+      },
+      "tooltips": {
+        "sleepAfterTask": "Will sleep after the current task is finished",
+        "shutdownAfterTask": "Will shut down after the current task is finished"
+      }
+    },
+    "jobList": {
+      "title": "Job List",
+      "empty": "Failed to load jobs or no jobs found",
+      "columns": {
+        "name": "Job Name",
+        "status": "Status",
+        "priority": "Priority",
+        "type": "Type",
+        "submitted": "Submitted Time",
+        "actions": "Actions"
+      },
+      "actions": {
+        "details": "Details",
+        "pause": "Pause",
+        "resume": "Resume",
+        "requeue": "Requeue",
+        "cancel": "Cancel",
+        "delete": "Delete"
+      }
+    },
+    "workerDetails": {
+      "title": "Worker Details",
+      "id": "ID",
+      "name": "Name",
+      "status": "Status",
+      "lastSeen": "Last Seen",
+      "version": "Version",
+      "ipAddress": "IP Address",
+      "platform": "Platform",
+      "lastTask": "Last Task",
+      "taskTypes": "Supported Task Types",
+      "notes": "Notes",
+      "noNotes": "None",
+      "close": "Close"
+    },
+    "noteDialog": {
+      "title": "Edit notes for {name}",
+      "placeholder": "Please enter notes",
+      "cancel": "Cancel",
+      "save": "Save"
+    },
+    "messages": {
+      "loadJobsFail": "Failed to load job list from the backend. Please check if the backend service is running.",
+      "loadWorkersFail": "Failed to load Worker list.",
+      "loadQueueFail": "Failed to load job queue.",
+      "noteSavedSuccess": "Notes saved successfully",
+      "noteSavedFail": "Failed to save notes",
+      "deleteJobConfirm": "Are you sure you want to delete the job \"{name}\"? This action cannot be undone.",
+      "warning": "Warning",
+      "confirmDelete": "Confirm Delete",
+      "cancel": "Cancel",
+      "jobDeleted": "Job \"{name}\" has been deleted.",
+      "opSuccess": "Operation successful: {command}",
+      "opFail": "Operation \"{command}\" failed: {error}",
+      "removeWorkerConfirm": "Are you sure you want to remove the {count} selected Workers?",
+      "batchCommandSent": "Sent '{command}' command to {count} workers.",
+      "batchCommandFail": "Batch operation failed: {error}",
+      "loadWorkerDetailsFail": "Failed to load Worker details."
+    }
+  },
+  "jobDetail": {
+    "title": "Job Details",
+    "submittedAt": "Submitted At",
+    "lastUpdatedAt": "Last Updated At",
+    "summary": {
+      "totalSteps": "Total Steps",
+      "completed": "Completed",
+      "rendering": "Rendering",
+      "failed": "Failed"
+    },
+    "workerContribution": {
+      "title": "Worker Contribution Analysis",
+      "tooltip": "Frames Rendered",
+      "noData": "No completed tasks to analyze"
+    },
+    "contributionDetails": {
+      "title": "Detailed Data",
+      "workerName": "Worker Name",
+      "framesRendered": "Frames Rendered",
+      "notes": "Notes",
+      "percentage": "Percentage"
+    },
+    "frameTimeAnalysis": {
+      "title": "Frame Time Analysis (seconds)",
+      "tooltip": {
+        "loading": "Loading...",
+        "frame": "Frame",
+        "time": "Render Time",
+        "worker": "Worker"
+      },
+      "xAxis": "Frame Number",
+      "yAxis": "Render Time (s)",
+      "noData": "Not enough time data to analyze"
+    },
+    "parameters": {
+      "title": "Job Parameters",
+      "frameRange": "Frame Range",
+      "format": "Output Format",
+      "scene": "Scene",
+      "fps": "FPS",
+      "blendFile": "Blend File",
+      "outputPath": "Output Path",
+      "taskType": "Task Type",
+      "taskId": "Task ID",
+      "noData": "No detailed parameters available"
+    },
+    "messages": {
+      "loadError": "Failed to load job detail data",
+      "workerNotFound": "Could not find the corresponding Worker entity to edit notes."
+    }
+  }
+}
